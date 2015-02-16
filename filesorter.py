@@ -37,13 +37,11 @@ def search_incoming(dir, reg_matches):
 def move_files(files):
 	for file in files:
 		os.rename(file['source'], file['destination'])
-"""
+
 move_files(
 	search_incoming(
 		'/media/raid/incoming/complete',
 		get_regmatches('/media/raid/Videos/anime')
 	)
 )
-"""
 
-print(search_incoming('/media/raid/incoming/complete',get_regmatches('/media/raid/Videos/anime')))
